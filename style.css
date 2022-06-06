@@ -1,0 +1,142 @@
+:root {
+  --color-brand--1: #ffb545;
+  --color-brand--2: #00c46a;
+
+  --color-dark--1: #2d3439;
+  --color-dark--2: #42484d;
+  --color-light--1: #aaa;
+  --color-light--2: #ececec;
+  --color-light--3: rgb(214, 222, 224);
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: inherit;
+}
+
+html {
+  font-size: 62.5%;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Manrope', sans-serif;
+  color: var(--color-light--2);
+  font-weight: 400;
+  line-height: 1.6;
+  height: 100vh;
+  overscroll-behavior-y: none;
+
+  background-color: #fff;
+  padding: 2.5rem;
+}
+
+/* SIDEBAR */
+
+.sidebar {
+  height: 100%;
+  width: 40rem;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  background-color: var(--color-dark--1);
+  overflow-x: hidden;
+  padding-top: 20px;
+  padding: 3rem;
+  text-align: center;
+}
+.total {
+  display: inline-block;
+  text-align: left;
+  width: 40rem;
+  padding: 3rem;
+}
+
+.logo {
+  height: 5.2rem;
+  align-self: center;
+  margin-bottom: 4rem;
+  margin-top: 4rem;
+}
+
+.item {
+  background-color: var(--color-dark--2);
+  border-radius: 5px;
+  padding: 1.5rem 2.25rem;
+  margin-bottom: 1.75rem;
+  /* cursor: pointer; */
+
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr 1fr;
+  gap: 0.75rem 1.5rem;
+}
+
+.qty {
+  font-size: 5rem;
+}
+
+span {
+  display: inline-block;
+  border-radius: 50%;
+  background-color: var(--color-light--1);
+  font-size: 3rem;
+  width: 3rem;
+  cursor: pointer;
+}
+
+.catalogue {
+  display: grid;
+  grid-template-columns: 30rem 30rem 30rem;
+  /* background-color: var(--color-light--1); */
+  gap: 2rem;
+  padding: 3rem;
+  margin-left: 40rem;
+}
+
+.card {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  background-color: var(--color-dark--1);
+  /* max-width: 300px; */
+  text-align: center;
+  padding: 2rem;
+  border-radius: 9px;
+}
+
+.card img {
+  width: 100%;
+}
+
+.price {
+  color: var(--color-light--2);
+  font-size: 22px;
+}
+
+.btnCard,
+.btnItem {
+  border: none;
+  border-radius: 9px;
+  outline: 0;
+  padding: 12px;
+  color: var(--color-dark--1);
+  background-color: var(--color-light--2);
+  text-align: center;
+  cursor: pointer;
+  width: 100%;
+  font-size: 18px;
+}
+
+.card button:hover {
+  opacity: 0.7;
+}
+
+@media screen and (max-height: 450px) {
+  .sidenav {
+    padding-top: 15px;
+  }
+  .sidenav a {
+    font-size: 18px;
+  }
+}
