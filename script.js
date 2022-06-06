@@ -88,7 +88,7 @@ const renderProductsOnCart = function () {
   //render total amounts on cart
   total.innerHTML = `
                       <h1>Total Items: ${totalItems}</h1>
-                      <h1>Total Amount: ${totalPriceToPay}</h1>
+                      <h1>Total Amount: $${totalPriceToPay}</h1>
                     `;
 };
 
