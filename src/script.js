@@ -46,7 +46,7 @@ const renderProductsOnScreen = function () {
 };
 
 //items on cart array
-let cart = [];
+const cart = [];
 
 //render selected items on cart
 const renderProductsOnCart = function () {
